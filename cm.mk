@@ -13,6 +13,9 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 
+# Custom unofficial build tag
+TARGET_UNOFFICIAL_BUILD_ID := temasek
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := cm_bullhead
 PRODUCT_BRAND := google
