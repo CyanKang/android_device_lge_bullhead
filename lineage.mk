@@ -19,3 +19,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
     BUILD_FINGERPRINT="google/bullhead/bullhead:7.1.1/N4F26O/3582057:user/release-keys" \
     PRIVATE_BUILD_DESC="bullhead-user 7.1.1 N4F26O 3582057 release-keys"
+
+# Enable root
+WITH_SU := true
