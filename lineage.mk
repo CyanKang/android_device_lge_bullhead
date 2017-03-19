@@ -22,3 +22,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Enable root
 WITH_SU := true
+
+PRODUCT_PACKAGES += ThemeInterfacer
