@@ -8,6 +8,9 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 
+# Enable root
+WITH_SU := true
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_bullhead
 PRODUCT_BRAND := google
@@ -17,8 +20,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
-    BUILD_FINGERPRINT="google/bullhead/bullhead:7.1.1/N4F26T/3687331:user/release-keys" \
-    PRIVATE_BUILD_DESC="bullhead-user 7.1.1 N4F26T 3687331 release-keys"
 
-# Enable root
-WITH_SU := true
+    BUILD_FINGERPRINT="google/bullhead/bullhead:7.1.2/N2G47F/3769476:user/release-keys" \
+    PRIVATE_BUILD_DESC="bullhead-user 7.1.2 N2G47F 3769476 release-keys"
